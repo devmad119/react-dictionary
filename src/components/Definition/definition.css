@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
 .meanings_container {
     margin: 0 auto;
-    /* background-color: bisque; */
     place-items: center;
     width: 500px;
     display: grid;
-    padding: 50px 0;
+    padding: 20px 0 50px 0;
     gap: 20px;
 }
 
 .meaning {
-    /* background-color: var(--accent-color); */
     padding: 1rem;
     border-radius: 7px;
     width: 100%;
@@ -33,8 +30,7 @@
 
 .meaning .info .def {
     font-weight: 700;
-    /* font-family: 'Courgette', cursive; */
-    font-family: 'Short Stack', cursive;
+    font-family: "Short Stack", cursive;
 }
 
 .meaning .info div {
@@ -46,28 +42,79 @@
     color: var(--text-color);
     font-weight: 400;
     font-size: 12px;
-
-    
 }
 
 .alternative .antonyms,
-.alternative .synonyms{
+.alternative .synonyms {
     margin-top: 5px;
     line-height: 1.4;
+    flex-wrap: wrap;
+    word-wrap: break-word;
 }
 
+
+.synonyms p,
+.antonyms p {
+    display: inline-flex;
+    padding: 2px 5px;
+    margin: 2px;
+    border-radius: 10px;
+    color: white;
+}
+
+.origin {
+
+    text-align: left;
+    width: 100%;
+}
+.origin p span{
+    font-weight: 100;
+    font-family: system-ui;
+
+}
+.synonyms p{
+    background-color: green;
+}
+.antonyms p{
+    background-color: red;
+}
 
 audio {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    width: 100%;
-    border-radius: 10px;
-    height: 50px;
+    display: none;
 }
 
-audio::-webkit-media-controls-volume-slider {
-    /* display: none !important; */
-    background-color: red;
+.audio-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.audio-container .speaker  {
+
+    margin: 2px;
+    width: 50px;
+    border: 2px solid var(--second-text-color);
+    border-radius: 100px;
+    padding: 7px;
+    background-position-x: center;
+    height: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+    background: var(--speaker-img);
+    animation: rotate_animation 2s 2 linear;
+
+}
+
+@keyframes rotate_animation {
+    0%{
+        pointer-events: none;
+        transform: rotate(0deg);
+    }
+    100% {
+        pointer-events: all;
+        transform: rotate(360deg);
+    }
+    
 }
 
 @media screen and (max-width: 560px) {
