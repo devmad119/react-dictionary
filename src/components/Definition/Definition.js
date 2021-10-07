@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./definition.css";
 
-const Index = ({ meanings, word, category }) => {
+const Definition = ({ meanings, word, category }) => {
     const [opacity, setOpacity] = useState({
         opacity: ".5",
     });
@@ -94,4 +94,4 @@ const Index = ({ meanings, word, category }) => {
     );
 };
 
-export default Index;
+export default Definition;
