@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+:root {
+    --bg-color: #fff;
+    --text-color: #111;
+    --second-text-color: gray;
+    --font: "Sora", sans-serif;
+    /* --box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+    --box-shadow: 0px 0px 0.7px -6px rgba(0, 0, 0, 0.081),
+        0px 0px 1.7px -6px rgba(0, 0, 0, 0.115),
+        0px 0px 3.5px -6px rgba(0, 0, 0, 0.145),
+        0px 0px 7.3px -6px rgba(0, 0, 0, 0.179),
+        0px 0px 20px -6px rgba(0, 0, 0, 0.26);
+    --inset-shadow: inset 0 0 5px -3px rgba(0, 0, 0, 0.5);
+
+    --bg-img: url("./assets/arrow-dark.png") no-repeat right;
+}
+.dark-mode {
+    --bg-color: #282c34;
+    --text-color: #fff;
+    --second-text-color: gray;
+    --box-shadow: 0 0 5px rgba(225, 225, 225, 0.9);
+    --inset-shadow: inset 0 0 5px -3px rgba(225, 225, 225, 1);
+    --bg-img: url("./assets/arrow-light.png") no-repeat right;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: color 500ms ease-in-out;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+#root {
+    min-height: 90vh;
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+
+.theme-icon {
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    opacity: 1;
+    z-index: 100;
+}
+
+.theme-icon img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    border-radius: 100px;
 }
