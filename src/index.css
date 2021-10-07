@@ -15,6 +15,7 @@
     --inset-shadow: inset 0 0 5px -3px rgba(0, 0, 0, 0.5);
 
     --bg-img: url("./assets/arrow-dark.png") no-repeat right;
+    --speaker-img : url('./assets/speaker/speaker-dark.png') no-repeat center;
 }
 .dark-mode {
     --bg-color: #282c34;
@@ -23,6 +24,8 @@
     --box-shadow: 0 0 5px rgba(225, 225, 225, 0.9);
     --inset-shadow: inset 0 0 5px -3px rgba(225, 225, 225, 1);
     --bg-img: url("./assets/arrow-light.png") no-repeat right;
+    --speaker-img : url('./assets/speaker/speaker-light.png') no-repeat center;
+
 }
 
 * {
@@ -44,7 +47,7 @@ body::-webkit-scrollbar {
 }
 
 #root {
-    min-height: 90vh;
+    min-height: 110vh;
     position: relative;
     margin: 0 auto;
     background-color: var(--bg-color);
@@ -71,4 +74,28 @@ body::-webkit-scrollbar {
     padding: 0;
     width: 30px;
     border-radius: 100px;
+}
+
+/* Footer */
+
+footer.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.footer p a{
+    text-decoration: none;
+    color: var(--second-text-color);
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+
+.footer p a:hover,
+.footer p a:focus{
+    text-decoration: underline;
+    color: rgb(146, 146, 255);
 }
