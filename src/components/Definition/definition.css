@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+
+.meanings_container {
+    margin: 0 auto;
+    /* background-color: bisque; */
+    place-items: center;
+    width: 500px;
+    display: grid;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.meaning {
+    /* background-color: var(--accent-color); */
+    padding: 1rem;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+}
+.meaning .speech {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.meaning .info {
+    margin-left: 1.5rem;
+}
+
+.meaning .info .def {
+    font-weight: 700;
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'Short Stack', cursive;
+}
+
+.meaning .info div {
+    font-style: italic;
+    margin-top: 10px;
+    color: var(--second-text-color);
+}
+.meaning .info .alternative {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 12px;
+
+    
+}
+
+.alternative .antonyms,
+.alternative .synonyms{
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+
+audio {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    /* display: none !important; */
+    background-color: red;
+}
+
+@media screen and (max-width: 560px) {
+    .meanings_container {
+        padding: 3% 3% 30% 3%;
+        width: 100%;
+    }
+    .dark-theme .meaning {
+        box-shadow: 0 0 10px white;
+    }
+    audio {
+        width: 100%;
+    }
+}
