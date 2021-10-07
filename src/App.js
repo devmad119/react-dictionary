@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./components/Header";
 import ThemeToggle from "./components/ThemeToggle";
-import Definition from "./components/Definition";
+import Definition from "./components/Definition/Index";
+import Footer from "./components/Footer";
 
 function App() {
     const [meanings, setMeanings] = useState([]);
@@ -27,6 +28,8 @@ function App() {
         dictionaryAPI();
     }, [word, category]);
 
+                    console.log(meanings);
+
     return (
         <React.Fragment>
             <Header
@@ -43,6 +46,7 @@ function App() {
                 />
             )}
             <ThemeToggle />
+            <Footer />
         </React.Fragment>
     );
 }
