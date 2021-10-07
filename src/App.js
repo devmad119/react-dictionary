@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./components/Header";
 import ThemeToggle from "./components/ThemeToggle";
-import Definition from "./components/Definition/Index";
+import Definition from "./components/Definition";
 import Footer from "./components/Footer";
 
 function App() {
