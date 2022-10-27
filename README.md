@@ -84,6 +84,6 @@ If you have any feedback, please reach out to us at jatinsharma089659@gmail.com
   
 ## Developer
 
-- [@j471n](https://github.com/j471n/)
+- [@kiddodev050](https://github.com/kiddodev050/)
 
   
