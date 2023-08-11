@@ -48,7 +48,7 @@ Create a directory or a folder
 Clone the project
 
 ```bash
-  git clone https://github.com/j471n/react-dictionary.git
+  git clone https://github.com/devilhacker0119/react-dictionary.git
 ```
 
 Go to the project directory
@@ -75,15 +75,5 @@ Start the server
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-  
-## Feedback
-
-If you have any feedback, please reach out to us at jatinsharma089659@gmail.com
-
-  
-## Developer
-
-- [@kiddodev050](https://github.com/kiddodev050/)
 
   
